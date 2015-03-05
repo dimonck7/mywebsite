@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>MyBlog</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/blog/blog.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="./Carousel Template for Bootstrap_files/ie-emulation-modes-warning.js"></script>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+        <![endif]-->
+        <script src="{{STATIC_URL}}bootstrap/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="{{STATIC_URL}}bootstrap/css/bootstrap.js" type="text/javascript"></script>
+        <![endif]-->
+  </head>
+
+<body>
+
+<header>
+    <h1 style="color:black"></h1>
+</header>
+
+<!--Меню -->
+
+<div class="row">
+  <div class="span9">
+      <div class="container">
+    <div class="blog-masthead navbar-static-top">
+    <div class="blog-inner">
+      <div class="container">
+        <div class="blog-header">
+            <a class="navbar-brand" style="color:white" href="{% url 'list' %}">MyBlog</a>
+        </div>
+        <nav class="blog-nav ">
+          <a class="blog-nav-item active" href="{% url 'list' %}">MyPost</a>
+            <a class="blog-nav-item" href="#"/>How Created?</a>
+            <a class="blog-nav-item" href="#"/>Coming Soon!</a>
+            <!--Пустое место -->
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/></a>
+            <a class="blog-nav-item" href="#"/>Register</a>
+            <a class="blog-nav-item" href="#"/>Login in</a>
+
+
+            <!--Пустое место -->
+            <form class="blog-nav-item" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            </form>
+            <a>
+            <button type="submit" class="btn btn-default">Submit</button>
+            </a>
+                        <a class="blog-nav-item" href="#"/>ver 1.0.1</a>
+        </nav>
+
+      </div>
+      </div>
+    </div>
+     </div>
+
+</div></div>
+
+<!--Меню -->
+
+
+<!--Посты -->
+
+<header>
+    <h1 style="color:black"></h1>
+</header>
+
+<div class="row">
+  <div class="span9">
+      <div class="container">
+        {% block content %}
+            Empty page
+        {% endblock %}
+
+</div></div>
+</div>
+
+<!--Посты -->
+
+
+<!--Слайдер -->
+
+<!--
+        http://cs625417.vk.me/v625417712/1d639/KaffwvSwYtY.jpg
+        http://cs625417.vk.me/v625417712/1d630/2QZXNZBYxLI.jpg
+        http://cs625417.vk.me/v625417712/1d642/Ra9c5DkoTvI.jpg
+        <img src = "" alt="" >
+                  <div class="carousel-caption">
+                      <h3>Head №2</h3>
+                      <p>Text</p>
+                  </div>
+            -->
+
+
+
+<!--Загрузка -->
+
+
+
+<!--Загрузка -->
+
+<!--Низ -->
+
+<div class="row">
+    <div class="span9">
+<div class="text">
+         <p><div>
+        <footer class="blog-footer">
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+          <p>
+            MyBlog© 2015
+          </p>
+          <p>
+            Created by Dima Chuvardinsky
+          </p>
+    </footer>
+    </div></p>
+  </div>
+    </div>
+</div>
+
+<!--Низ -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
