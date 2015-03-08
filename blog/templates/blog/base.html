@@ -47,24 +47,20 @@
             <a class="navbar-brand" style="color:white" href="{% url 'list' %}">MyBlog</a>
         </div>
         <nav class="blog-nav ">
-          <a class="blog-nav-item active" href="{% url 'list' %}">MyPost</a>
-            <a class="blog-nav-item" href="#"/>How Created?</a>
-            <a class="blog-nav-item" href="#"/>Coming Soon!</a>
+            <a class="blog-nav-item " href="{% url 'list' %}">MyPost</a>
+            <a class="blog-nav-item" href="{% url 'creat' %}">How Created?</a>
+            <a class="blog-nav-item" href="{% url 'coming' %}">Coming Soon!</a>
+            <a class="blog-nav-item" href="{% url 'home' %}">MyWebsite</a>
             <!--Пустое место -->
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/></a>
-            <a class="blog-nav-item" href="#"/>Register</a>
-            <a class="blog-nav-item" href="#"/>Login in</a>
-
-
-            <!--Пустое место -->
+            <a class="blog-nav-item" href=""></a>
+            <a class="blog-nav-item" href=""></a>
+            <a class="blog-nav-item" href=""></a>
+            <a class="blog-nav-item" href=""></a>
+            <a class="blog-nav-item" href=""></a>
+            <a class="blog-nav-item" href=""></a>
+             <!--Пустое место -->
+            <a class="blog-nav-item" href="#">Register</a>
+            <a class="blog-nav-item" href="#">Login in</a>
             <form class="blog-nav-item" role="search">
             <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
@@ -73,7 +69,7 @@
             <a>
             <button type="submit" class="btn btn-default">Submit</button>
             </a>
-                        <a class="blog-nav-item" href="#"/>ver 1.0.1</a>
+                        <a class="blog-nav-item" href="{% url 'ver' %}"/>ver 1.0.2</a>
         </nav>
 
       </div>

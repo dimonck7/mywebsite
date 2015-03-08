@@ -12,3 +12,13 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return "/blog/%i/" % self.id
+
+class Ver(models.Model):
+    title = models.CharField(max_length=255)
+    content = models.TextField(max_length=10000)
+
+    def __unicode__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return "/ver/%i/" % self.id

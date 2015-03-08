@@ -1,27 +1,30 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    {% for post in object_list %}
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h2 class="panel-title" ><a  href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
-            </div>
-            <div class="panel-body">
-                <h3 style="color:gray"> <p>{{ post.content }}</p></h3>
-                <h4 style="color:gray"><p><a href="{{ post.get_absolute_url }}">Learn More...</a></p></h4>
-                <h6 style="color:black"<p>{{ post.datetime }}</p></h6>
-            </div>
+        <center><a href="{% url 'coming' %}" class="btn btn-primary btn-ln " role="button">MyBlog ready for 65%</a></center>
 
+         <br>
+
+        <div class="progress">
+             <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                <span class="sr-only">45% Complete</span>
+            </div>
         </div>
 
+        <br>
+    {% for ver in object_list %}
 
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <center><h2 class="panel-title"><a>{{ ver.title }}</a></h2></center>
+  </div>
+  <div class="panel-body">
+  <h4 style="color:gray"> <p>{{ ver.content }}</p></h4>
+  </div>
+</div>
 
     {% empty %}
-    <h3 style="color:black><p>Нет постов</p></h3>
+    <h3 style="color:black><p>No News</p></h3>
     {% endfor %}
-
-<header>
-    <h1 style="color:black"></h1>
-</header>
 
 <!--Слайдер -->
       <div class="container">
@@ -42,6 +45,13 @@
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
               </div>
-<!--Слайдер -->
+            <div class="container">
+<header>
+    <h1 ><center><p class="bg-primary"></p></center></h1>
+</header>
+
+
 
 {% endblock %}
+
+
