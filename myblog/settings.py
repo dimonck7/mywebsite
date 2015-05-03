@@ -21,11 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'cxe9g+*(!j5jo5i%v6rr7ytpxr1zk&^qi*uo@g$r=wpy@_w$4z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = True
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -69,15 +69,15 @@ DATABASES = { 'default':
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ru'
+LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 STATICFILES_DIRS = (
@@ -86,7 +86,7 @@ STATICFILES_DIRS = (
 
 SITE_ID=1
 
-ALLOWED_HOSTS = ['newblog.pythonanywhere.com']
+ALLOWED_HOSTS = ['insky001.pythonanywhere.com']
 
 
 # Static files (CSS, JavaScript, Images)
